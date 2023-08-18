@@ -1,0 +1,70 @@
+// Spoot class definition
+class Spoot {
+    // Attributes
+    private String name;
+    private String color;
+    private double weight;
+    private int age;
+
+    // Constructors
+    public Spoot(String name, String color, double weight, int age) {
+        this.name = name;
+        this.color = color;
+        this.weight = weight;
+        this.age = age;
+    }
+
+    // Getters and Setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    // Method to get details
+    public String details() {
+        return "My name is " + name + ". I am " + age + " years old. I am a " + color + " Spoot and I weigh " + weight + " lbs.";
+    }
+}
+
+
+// Main class for testing
+public class Main {
+    public static void main(String[] args) {
+        //Instantiate Spoots
+        Spoot spoot1 = new Spoot("Crescent", "blue", 2.5, 7);
+        Spoot spoot2 = new Spoot("Ninevah", "red", 3.2, 4);
+        Spoot spoot3 = new Spoot("Juniper", "purple", 2.0, 2);
+
+        // Test the details method
+        System.out.println(spoot1.details());
+        System.out.println(spoot2.details());
+        System.out.println(spoot3.details());
+    }
+}
